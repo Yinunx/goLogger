@@ -1,0 +1,2 @@
+# goLogger
+simple go log
