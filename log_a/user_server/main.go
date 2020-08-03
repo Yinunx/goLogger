@@ -2,7 +2,6 @@ package main
 
 import (
 	"log_a/logger"
-	"time"
 )
 
 func initLogger(name, logPath, logName string, level string) (err error) {
@@ -10,6 +9,7 @@ func initLogger(name, logPath, logName string, level string) (err error) {
 	m["log_path"] = logPath
 	m["log_name"] = logName
 	m["log_level"] = level
+	m["log_split_type"] = "size" //按照大小切分
 	//err = logger.InitLogger("file", m)
 	err = logger.InitLogger(name, m)
 	if err != nil {
@@ -22,8 +22,8 @@ func initLogger(name, logPath, logName string, level string) (err error) {
 
 func Run() {
 	for {
-		logger.Debug("user server is running")
-		time.Sleep(time.Second)
+		logger.Debug("user server is runningdfdfadfdasf. hello world , hello wroldf df asdfsdfadfxxxxxxxxxxxxxxx")
+		//time.Sleep(time.Second)
 	}
 }
 
