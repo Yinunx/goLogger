@@ -29,7 +29,7 @@ func Run() {
 
 func main() {
 	//initLogger("c:/loggos/", "user_server", "debug")
-	initLogger("console", "c:/loggos/", "user_server", "debug")
+	initLogger("file", "c:/loggos/", "user_server", "debug")
 	Run()
 	return
 }
